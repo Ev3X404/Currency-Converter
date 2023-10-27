@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 600;
+
+}
+
+body {
+    color: aliceblue;
+    background: rgb(28, 1, 162);
+    background: linear-gradient(126deg, rgba(28, 1, 162, 1) 0%, rgba(103, 89, 205, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.btn {
+    margin-left: 1rem;
+    border: none;
+    width: 8em;
+    height: 3em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+
+    &:hover {
+        background: linear-gradient(0deg, #A47CF3, #683FEA);
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+            inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+            0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+            0px 0px 180px 0px #9917FF;
+        transform: translateY(-2px);
+    }
+
+    ;
+
+    &:active {
+        transform: translateY(2px) translateX(1px);
+        box-shadow: 0 0 0 0 black;
+    }
+
+    ;
+}
+
+.money-images {
+    height: 210px;
+}
+
+.currency {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4d4bc9;
+    border-radius: 1rem;
+    margin: 15px;
+
+
+}
+
+.currency select {
+
+    color: #ffffff;
+    border-radius: .5rem;
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+    background: transparent;
+    user-select: none;
+    appearance: none;
+
+    &:hover {
+        color: #4d4bc9;
+    }
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 19px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.swap-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
